@@ -1,5 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
+import Image from "next/image";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -37,17 +39,21 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           {/* Left Section */}
           <div className="bg-gray-800 text-white p-6 rounded-lg lg:w-1/2 lg:mr-4">
-            <h2 className="text-2xl font-bold mb-4">Let's Talk!</h2>
+            <h2 className="text-2xl font-bold mb-4">Let&apos;s Talk!</h2>
             <ul className="list-disc list-inside mb-4">
               <li>Have feedback?</li>
               <li>Found Bad Data?</li>
               <li>Want to see new functionality?</li>
               <li>Anything else ...</li>
             </ul>
-            <p className="mb-4">We'd love to hear from you!</p>
-            <img 
-            src="./crossed-racing-flags-checkered-race-.png" alt="Crossed checkered flags" className="w-200 h-150 object-contain rounded-lg"/>
-
+            <p className="mb-4">We&apos;d love to hear from you!</p>
+            <Image 
+              src="/crossed-racing-flags-checkered-race-.png" 
+              alt="Crossed checkered flags" 
+              width={200} 
+              height={150} 
+              className="object-contain rounded-lg"
+            />
           </div>
 
           {/* Right Section - Feedback Form */}
